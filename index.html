@@ -3,106 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>لهاجر ❤️</title>
+<title>هاجر ❤️</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial;background:radial-gradient(circle at top,#ff8fab,#ff2e63 60%,#7a003c);min-height:100vh;display:flex;justify-content:center;padding:16px}
-.card{background:rgba(255,255,255,.97);width:100%;max-width:460px;border-radius:30px;padding:26px 22px;text-align:center;box-shadow:0 25px 60px rgba(0,0,0,.4);margin:auto}
-input{width:100%;padding:16px;border:2px solid #ff2e63;border-radius:16px;text-align:center;font-size:21px;outline:none}
-.btn{background:linear-gradient(#ff2e63,#ff7a93);color:#fff;border:none;padding:16px;border-radius:16px;font-size:21px;width:100%;margin-top:14px}
-.photo{width:250px;height:250px;object-fit:cover;border-radius:50%;border:7px solid #ff2e63;box-shadow:0 0 0 7px #ffe3ea,0 0 40px #ff2e63}
-h1{color:#ff2e63;font-size:34px;margin:16px 0 4px}
-.sub{color:#888;font-size:16px;margin:0 0 12px}
-.msg{background:#fff0f4;border:2px solid #ffd0da;border-radius:22px;padding:20px;font-size:20px;line-height:2.15;color:#1a1a1a;white-space:pre-line;text-align:center}
-.names{margin-top:16px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-.names span{background:#ff2e63;color:#fff;padding:9px 15px;border-radius:30px;font-size:16px}
-#love{display:none}
-.heart{position:fixed;top:-20px;animation:fall 4s linear infinite;font-size:26px;z-index:999}
-@keyframes fall{to{transform:translateY(110vh) rotate(360deg)}}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',Arial}
+body{background:linear-gradient(180deg,#ff9a9e,#fad0c4,#fff0f3);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:12px}
+.card{background:white;width:100%;max-width:450px;border-radius:30px;overflow:hidden;text-align:center;box-shadow:0 20px 60px rgba(233,30,99,.35);padding-bottom:25px}
+.top-img{width:100%;height:420px;object-fit:cover}
+.heart{width:72px;height:72px;background:#e91e63;color:white;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:36px;margin:-36px auto 10px;border:5px solid white;box-shadow:0 5px 15px rgba(0,0,0,.2);position:relative;z-index:2}
+h1{color:#e91e63;font-size:34px;margin:5px 0}
+.sub{color:#888;font-size:14px;margin-bottom:10px}
+.box{background:#fff0f4;margin:15px;border-radius:22px;padding:18px;line-height:2.1;color:#333;font-size:17px;text-align:center}
+.box b{color:#e91e63}
+button{background:linear-gradient(45deg,#e91e63,#ff4081);color:white;border:none;padding:14px 30px;border-radius:30px;font-size:19px;margin-top:10px;cursor:pointer;box-shadow:0 5px 15px rgba(233,30,99,.4)}
+input{padding:13px;border:2px solid #ffb6c9;border-radius:25px;width:85%;text-align:center;font-size:19px;margin-top:15px;outline:none}
+.names{background:linear-gradient(45deg,#ffe3ec,#fff);margin:15px;border-radius:22px;padding:15px;line-height:2.2;font-size:19px;color:#e91e63;font-weight:bold}
+.small{font-size:13px;color:#999;margin-top:12px;line-height:1.8}
+#main{display:none}
 </style>
 </head>
 <body>
+
+<!-- الباسورد -->
 <div class="card" id="lock">
-<div style="font-size:55px">🔒❤️</div>
-<h1>لهاجر بس</h1>
-<p style="font-size:19px;line-height:1.8">الموقع ده معمول ليكي انتي بس<br>اكتبي الباسورد عشان تدخلي</p>
+<img class="top-img" src="hajar.jpg">
+<div class="heart">❤️</div>
+<h1>هاجر</h1>
+<p class="sub">المكان ده معمول ليكي انتي بس يا بنوتي</p>
+<div class="box">في مفاجأة مستنياكي جوه ..<br><b>اكتبي الباسورد وادخلي يا قمر</b></div>
 <input type="password" id="pass" placeholder="الباسورد هنا">
-<button class="btn" onclick="check()">افتحي يا هاجر ❤️</button>
-<p id="err" style="color:red"></p>
+<br>
+<button onclick="check()">ادخلي يا حبيبتي ❤️</button>
+<p id="err" style="color:red;margin-top:10px"></p>
 </div>
 
-<div class="card" id="love">
-<img class="photo" src="img/hajar.jpg">
+<!-- جوه -->
+<div class="card" id="main">
+<img class="top-img" src="hajar.jpg">
+<div class="heart">💖</div>
 <h1>هاجر ❤️</h1>
-<p class="sub">أحلي هاجر شوفتها في حياتي</p>
+<p class="sub">يا بنت حسين .. يا أحلى بنت شفتها في حياتي</p>
 
-<div class="msg">ازيك يا احلي هاجر شوفتها في حياتي
-عاوز اقولك ان انتي احلييي بنت بحبها
-ولله العظيم انتي اكتر بنت حبيتها وفضفتلها
-والدليل اني كل ما بكلمك ببقا مبسوط
-والحمدلله الناس كلها شافتني وانا بكلمك ومبسوط
-
-ولله يبنتي انا حبيتك
-ومش عاوزك تشيلي هم اخوكي ولا اي حاجه من الكلام ده
-انا كل الي طلبو منك انك تستنيني بس
-اكون نفسي واجيلك يا روح قلبي
-
-ولله يبنتي انا بحبك بكل حلاتك
-وبحب مرضك وبحب شكلك
-ولله العظيييم انتي عجباني
-انتي المثل الاعلييي في حياتي بجد
-
-انا عاوز اقولك
-بحبك بحبك بحبك بحبك بحبك بحبك
-بحبك بحبك بحبك بحبك بحبك بحبك
-بحبك بحبك با هاجرررر يبنت حسيييين
-
-انا بجد حبيتك
-انتي اجمللل بنت عرفتها
-واكتر وحده شالتني في وقت تعبي وزعلي وضغطي النفسي
-وبتمني اكون مصدر سعاده ليكي
-وان انا اكون بغير منك وبخليكي احسن
-وبخليكي تفرحي من كلامي بس
-
-ولله العظيم انا بزعل قوي
-لما بشوفك زعلانه او تعبانه او فيكي اي ضرر
-انا وحيات ربنا انا بصحي من النوم قلبي مقبوض لو في حاجه فيكي
-ولله ولله العظيم انا حبيتك قوي يا بنوتي
-
-وعاوز اقولك بحبك يا هاجر بحبك 🥹❤️</div>
+<div class="box">
+ازيك يا احلي هاجر شوفتها في حياتي عاوز اقولك ان انتي احلييي بنت بحبها ولله العظيم انتي اكتر بنت حبيتها وفضفتلها والدليل اني كل ما بكلمك ببقا مبسوط والحمدلله الناس كلها شافتني وانا بكلمك ومبسوط ولله يبنتي انا حبيتك ومش عاوزك تشيلي هم اخوكي ولا اي حاجه من الكلام ده انا كل الي طلبو منك انك تستنيني بس اكون نفسي واجيلك يا روح قلبي ولله يبنتي انا بحبك بكل حلاتك وبحب مرضك وبحب شكلك ولله العظيييم انتي عجباني انتي المثل الاعلييي في حياتي بجد انا عاوز اقولك
+<br><br>
+<b>بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك بحبك با هاجرررر يبنت حسيييين</b>
+<br><br>
+انا بجد حبيتك انتي اجمللل بنت عرفتها واكتر وحده شالتني في وقت تعبي وزعلي وضغطي النفسي وبتمني اكون مصدر سعاده ليكي وان انا اكون بغير منك وبخليكي احسن وبخليكي تفرحي من كلامي بس ولله العظيم انا بزعل قوي لما بشوفك زعلانه او تعبانه او فيكي اي ضرر انا وحيات ربنا انا بصحي من النوم قلبي مقبوض لو في حاجه فيكي ولله ولله العظيم انا حبيتك قوي يا بنوتي وعاوز اقولك بحبك يا هاجر بحبك 🥹❤️
+</div>
 
 <div class="names">
-<span>بحبك يا ام روح 🥹❤️</span>
-<span>بحبك يا ام انس 🥹❤️</span>
-<span>بحبك يا بنوتي 🥹❤️</span>
-<span>بحبك يبنتي 🥹❤️</span>
-<span>بحبك يا جوجو 🥹❤️</span>
-<span>بحبك يا جوجتي 🥹❤️</span>
-<span>بحبك بكللل حالاتك 🥹❤️</span>
+بحبك يا ام روح 🥹❤️<br>
+بحبك يا ام انس 🥹❤️<br>
+بحبك يا بنوتي 🥹❤️<br>
+بحبك يبنتي 🥹❤️<br>
+بحبك يا جوجو 🥹❤️<br>
+بحبك يا جوجتي 🥹❤️<br>
+بحبك بكللل حالاتك 🥹❤️
 </div>
 
-<div class="msg" style="margin-top:16px">وربنا يخليكي ليا ويحفظك
-ويشفيكي من كل مرض
-وتجيلي بل سلامه يارب
-ربنا يسترك ويحفظك
-ويجمعنا في بيت واحد 🥹❤️❤️</div>
-<p style="font-size:14px;color:#999">من عبدو اللي بيحبك ❤️</p>
+<div class="box">
+وربنا يخليكي ليا ويحفظك ويشفيكي من كل مرض وتجيلي بل سلامه يارب ربنا يسترك ويحفظك ويجمعنا في بيت واحد 🥹❤️❤️
+<br><br>
+<b>استنيني بس .. اكون نفسي واجيلك يا روح قلبي ❤️</b>
 </div>
 
-<audio id="mysong" src="song3.mp3" loop></audio>
+<button onclick="play()">▶️ شغلي أغنيتنا يا هاجر</button>
+<audio id="song" src="song3.mp3" loop></audio>
+
+<p class="small">اتعمل بحب كبير .. ليكي انتي بس<br>من حبيبك اللي بيحبك أكتر من نفسه ❤️</p>
+</div>
 
 <script>
 function check(){
-let p=document.getElementById('pass').value;
-if(p=='201179'){
-document.getElementById('lock').style.display='none';
-document.getElementById('love').style.display='block';
-let s=document.getElementById('mysong');
-s.currentTime=45;
-s.play();
-setInterval(()=>{let h=document.createElement('div');h.className='heart';h.innerHTML='❤️';h.style.left=Math.random()*100+'vw';document.body.appendChild(h);setTimeout(()=>h.remove(),4000)},350);
-}else{document.getElementById('err').innerText='الباسورد غلط حاولي تاني';}
+let p=document.getElementById("pass").value;
+if(p=="201179"){
+document.getElementById("lock").style.display="none";
+document.getElementById("main").style.display="block";
+window.scrollTo(0,0);
+}else{
+document.getElementById("err").innerText="الباسورد غلط يا قمر .. حاولي تاني 😢";
 }
+}
+function play(){document.getElementById("song").play();}
 </script>
 </body>
-</html>
+  </html>
+
